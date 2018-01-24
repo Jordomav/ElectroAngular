@@ -2,9 +2,9 @@
 
 Using both Electron and Angular we can build desktop applications with TypeScript, HTML and SCSS. 
 
-Be sure that you have both [Angular](https://angular.io/) and [Electron](https://electronjs.org/)
+Be sure that you have [Angular](https://angular.io/), [Electron](https://electronjs.org/) and [TypeScript](https://www.typescriptlang.org/)
 
-`npm i -g electron angular-cli`
+`npm i -g electron angular-cli typescript`
 
 ## Installation
 
@@ -24,6 +24,8 @@ Install dependencies:
 ## Development server
 
 Run `ng serve` for a dev server.
+
+Open a second window and run `tsc main.ts`
 
 Open up a new terminal window and run `~/projects/ElectroAngular/` and then `electron .`
 
