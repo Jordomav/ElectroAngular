@@ -1,5 +1,7 @@
 # ElectroAngular
 
+Using both Electron and Angular we can build desktop applications with TypeScript, HTML and SCSS. 
+
 Be sure that you have both [Angular](https://angular.io/) and [Electron](https://electronjs.org/)
 
 `npm i -g electron angular-cli`
