@@ -1,3 +1,35 @@
-<p>
-  register works!
-</p>
+<div class="container">
+  <h1 class="">Register</h1>
+  <div class="login-form">
+    <form (ngSubmit)="signUp()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="email">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Username" [(ngModel)]="user.username" name="username">
+      </div>
+      <div class="form-group">
+        <label for="email">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First Name" [(ngModel)]="user.firstName" name="firstName">
+      </div>
+      <div class="form-group">
+        <label for="email">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name" [(ngModel)]="user.lastName" name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="user.userEmail" name="email">
+      </div>
+      <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="user.password" name="password">
+    </div>
+      <div class="form-group">
+        <label for="password">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" [(ngModel)]="user.confirmPassword" name="confirmPassword">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+  <div>
+    <p class="text-center">Already have an account? Sign in <a routerLink="/login">here</a>.</p>
+  </div>
+</div>
